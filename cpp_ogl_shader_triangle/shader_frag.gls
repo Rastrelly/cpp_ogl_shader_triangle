@@ -1,0 +1,12 @@
+#version 440 core
+
+out vec4 FragColor;
+
+in vec4 vertClr;
+
+uniform vec4 uniVertColor;
+
+void main()
+{
+	FragColor = vec4(vertClr + uniVertColor);
+}
